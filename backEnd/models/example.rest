@@ -1,0 +1,28 @@
+GET   http://localhost:5000/
+Accept: application/json
+
+###
+
+POST http://localhost:5000/signUp
+content-type: application/json
+
+{
+    "name" : "newUser",
+    "email" : "newUser@gmail.com",
+    "password" : "ronit"
+}
+
+###
+
+POST http://localhost:5000/signIn
+Content-Type: application/json
+
+{
+    "email" : "newUser@gmail.com",
+    "password" : "ronit"
+}
+
+###
+POST http://localhost:5000/protected
+Content-Type: application/json
+Authorization: Bearer 
