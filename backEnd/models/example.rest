@@ -7,9 +7,9 @@ POST http://localhost:5000/signUp
 content-type: application/json
 
 {
-    "name" : "newUser",
-    "email" : "newUser@gmail.com",
-    "password" : "ronit"
+    "name" : "Sujaleshwar",
+    "email" : "sujalchuhadhai@gmail.com",
+    "password" : "chuhad"
 }
 
 ###
@@ -25,4 +25,4 @@ Content-Type: application/json
 ###
 POST http://localhost:5000/protected
 Content-Type: application/json
-Authorization: Bearer 
+Authorization: Bearer .eyJfaWQiOiI1ZjdjM2Q3NjFiYThmNTFjMjBhZThlMGYiLCJpYXQiOjE2MDIyMzQ4MDB9.ixE85WEDYb81N4rsDHcMIdExOu8tLO

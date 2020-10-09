@@ -19,7 +19,7 @@ router.post('/signUp', (req, res) => {
   if (!name || !email || !password) {
     return res.status(422).json({ error: 'error' });
   }
-  User.findOne({ email: email })
+  User.findOne({ email })
     .then((savedUser) => {
       if (savedUser) {
         return res.status(422).json({ error: 'User already Registered' });
@@ -52,7 +52,7 @@ router.post('/signIn', (req, res) => {
   if (!email || !password) {
     return res.status(422).json({ error: 'please enter valid email-id or password' });
   }
-  User.findOne({ email: email })
+  User.findOne({ email })
     .then((savedUser) => {
       if (!savedUser) {
         return res.status(422).json({ error: 'please enter valid email-id or password' });
