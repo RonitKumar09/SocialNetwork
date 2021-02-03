@@ -8,8 +8,8 @@ content-type: application/json
 
 {
     "name" : "Ronit",
-    "email" : "@gmail.com",
-    "password" : ""
+    "email" : "huricane@gmail.com",
+    "password" : "skrarrsk"
 }
 
 ###
@@ -18,21 +18,29 @@ POST http://localhost:5000/signIn
 Content-Type: application/json
 
 {
-    "email" : "@gmail.com",
-    "password" : ""
+    "email" : "huricane@gmail.com",
+    "password" : "skrarrsk"
 }
 
 ###
 POST http://localhost:5000/createpost
 Content-Type: application/json
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhZmZiMWIzZWZlNTFjMDQ2YTlmZWIiLCJpYXQiOjE2MTIzODIzNDV9.PGbO4fDF1RBRy3SGsE2uhE-G4lyBDkzeIGrua82vm7A
 
 {
-    "title": "",
-    "body": ""
+    "title": "jhhjh",
+    "body": "lojghghfrghfv"
 }
 
 ###
 POST http://localhost:5000/protected
 Content-Type: application/json
 Authorization: Bearer 
+
+###
+GET http://localhost:5000/allposts
+Accept: application/json
+###
+GET http://localhost:5000/myposts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhZmZiMWIzZWZlNTFjMDQ2YTlmZWIiLCJpYXQiOjE2MTIzODIzNDV9.PGbO4fDF1RBRy3SGsE2uhE-G4lyBDkzeIGrua82vm7A
+Accept: application/json
