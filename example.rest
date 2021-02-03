@@ -8,8 +8,8 @@ content-type: application/json
 
 {
     "name" : "Ronit",
-    "email" : "ronitisGood@gmail.com",
-    "password" : "Ronitpassword"
+    "email" : "@gmail.com",
+    "password" : ""
 }
 
 ###
@@ -18,21 +18,21 @@ POST http://localhost:5000/signIn
 Content-Type: application/json
 
 {
-    "email" : "ronitisGood@gmail.com",
-    "password" : "Ronitpassword"
+    "email" : "@gmail.com",
+    "password" : ""
 }
 
 ###
 POST http://localhost:5000/createpost
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhYzI0YWUyMjA4MDE1MDAxOTUzZGMiLCJpYXQiOjE2MTIzNjY0MzJ9.kP2ZRf4dOZW5-QDNJCKfbD44YIFhb8CSSpe-1k9BXbM
+Authorization: Bearer 
 
 {
-    "title": "hello",
-    "body": "birth"
+    "title": "",
+    "body": ""
 }
 
 ###
 POST http://localhost:5000/protected
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhYzI0YWUyMjA4MDE1MDAxOTUzZGMiLCJpYXQiOjE2MTIzNjY0MzJ9.kP2ZRf4dOZW5-QDNJCKfbD44YIFhb8CSSpe-1k9BXbM
+Authorization: Bearer 
