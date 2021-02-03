@@ -1,0 +1,46 @@
+GET   http://localhost:5000/
+Accept: application/json
+
+###
+
+POST http://localhost:5000/signUp
+content-type: application/json
+
+{
+    "name" : "Ronit",
+    "email" : "huricane@gmail.com",
+    "password" : "skrarrsk"
+}
+
+###
+
+POST http://localhost:5000/signIn
+Content-Type: application/json
+
+{
+    "email" : "huricane@gmail.com",
+    "password" : "skrarrsk"
+}
+
+###
+POST http://localhost:5000/createpost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhZmZiMWIzZWZlNTFjMDQ2YTlmZWIiLCJpYXQiOjE2MTIzODIzNDV9.PGbO4fDF1RBRy3SGsE2uhE-G4lyBDkzeIGrua82vm7A
+
+{
+    "title": "jhhjh",
+    "body": "lojghghfrghfv"
+}
+
+###
+POST http://localhost:5000/protected
+Content-Type: application/json
+Authorization: Bearer 
+
+###
+GET http://localhost:5000/allposts
+Accept: application/json
+###
+GET http://localhost:5000/myposts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhZmZiMWIzZWZlNTFjMDQ2YTlmZWIiLCJpYXQiOjE2MTIzODIzNDV9.PGbO4fDF1RBRy3SGsE2uhE-G4lyBDkzeIGrua82vm7A
+Accept: application/json

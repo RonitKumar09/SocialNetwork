@@ -17,8 +17,10 @@ mongoose
   });
 
 require('./models/user.js');
+require('./models/post.js');
 
 app.use(require('./routes/auth'));
+app.use(require('./routes/post'));
 
 app.listen(process.env.PORT, () => {
   console.log('hello server started port at', process.env.PORT);
