@@ -35,4 +35,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhYzI0Y
 ###
 POST http://localhost:5000/protected
 Content-Type: application/json
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDFhYzI0YWUyMjA4MDE1MDAxOTUzZGMiLCJpYXQiOjE2MTIzNjY0MzJ9.kP2ZRf4dOZW5-QDNJCKfbD44YIFhb8CSSpe-1k9BXbM
