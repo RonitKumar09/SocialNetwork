@@ -4,17 +4,6 @@ const mongoose = require('mongoose');
 const requireLogin = require('../middleware/requireAuth');
 const Post = mongoose.model('Post');
 
-router.get('/allposts', (req, res) => {
-  Post.find()
-    .populate('postedBy', '_id name email')
-    .then((posts) => {
-      res.json({ posts });
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-});
-
 router.post('/createpost', requireLogin, (req, res) => {
   const { title, body } = req.body;
   if (!title || !body) {
@@ -40,6 +29,17 @@ router.get('/myposts', requireLogin, (req, res) => {
     .populate('postedBy', '_id name email')
     .then((myPosts) => {
       res.json({ myPosts });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+router.get('/allposts', (req, res) => {
+  Post.find()
+    .populate('postedBy', '_id name email')
+    .then((posts) => {
+      res.json({ posts });
     })
     .catch((err) => {
       console.log(err);
